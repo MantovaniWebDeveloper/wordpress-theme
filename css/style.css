@@ -11417,7 +11417,22 @@ header {
 }
 
 header .container {
-  background-color: yellow;
   height: 100%;
+}
+
+header .container .wrapHeaderContent {
+  height: 100%;
+  align-items: center;
+}
+
+header .container .wrapHeaderContent h2 {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header .container .wrapHeaderContent .column .navMenu ul li {
+  color: #fff;
+  display: inline-block;
 }
 

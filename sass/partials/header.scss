@@ -3,7 +3,25 @@ header {
   width: 100%;
   background-color: black;
  .container {
-   background-color: yellow;
    height: 100%;
+   .wrapHeaderContent {
+     height: 100%;
+     align-items: center;
+     h2 {
+       color:red;
+       text-transform: uppercase;
+       font-weight: bold;
+     }
+     .column {
+       .navMenu {
+         ul {
+           li {
+             color: #fff;
+             display: inline-block;
+           }
+         }
+       }
+     }
+   }
  }
 }

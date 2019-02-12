@@ -7,7 +7,7 @@
       //attivo il supporto dei titoli
       add_theme_support("title-tag");
       //attivo il supporto per le imagini in articoli e pagine
-      add_theme_support("post_thumbnails");
+      add_theme_support( 'post-thumbnails' );
       //dimensioni per le imagini in articoli e pagine
       add_image_size('wt_big',1400,600,true);
       add_image_size('wt_quad',600,600,true);
