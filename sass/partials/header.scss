@@ -18,6 +18,12 @@ header {
            li {
              color: #fff;
              display: inline-block;
+             & a {
+               color: #fff;
+             }
+             & a:hover {
+               color: red;
+             }
            }
          }
        }

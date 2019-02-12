@@ -9,7 +9,7 @@
   <body <?php body_class(); ?>>
     <header>
       <div class="container">
-        <div class="columns wrapHeaderContent">
+        <div class="columns wrapHeaderContent is-desktop">
           <div class="column is-one-third">
             <h2><?php bloginfo("name"); ?></h2>
           </div>
