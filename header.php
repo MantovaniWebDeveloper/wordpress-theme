@@ -15,10 +15,13 @@
           </div>
           <div class="column">
             <nav class="navMenu">
-                <ul>
-                  <li>Link1</li>
-                  <li>Link2</li>
-                </ul>
+                <?php
+                  wp_nav_menu(array(
+                    'theme_location' => 'topMenuHeader',
+                    'container' => false,
+                    'menu_class' => 'wt_nav_item'
+                  ));
+                 ?>
             </nav>
           </div>
         </div>
