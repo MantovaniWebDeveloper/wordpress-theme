@@ -1,13 +1,30 @@
 <?php get_header(); ?>
 <div class="wrapAll">
   <div class="container">
-    <div class="columns is-desktop">
-      <div class="column is-three-quarters">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="column">
-        <p>side</p>
-      </div>
+    <div class="owl-carousel owl-theme">
+      <?php
+      $the_query = new WP_Query( 'cat=3' );
+
+      while ( $the_query->have_posts() ) :
+      	$the_query->the_post(); ?>
+        <div class="item">
+          <h2><?php the_title(); ?></h2>
+          <?php the_post_thumbnail('wt_big'); ?>
+        </div>
+
+
+      <?php  endwhile;
+        // Ripristina Query & Post Data originali
+        wp_reset_query();
+        wp_reset_postdata();
+        ?>
+    </div>
+
+</div>
+
+
+
+
   </div>
 </div>
 

@@ -30,11 +30,20 @@
   if(! function_exists()) {
 
     function wt_style(){
-      wp_enqueue_style('bulma-css', get_template_directory_uri().'/css/style.css');
+      wp_enqueue_style('wt-css', get_template_directory_uri().'/css/style.css');
     }
 }
 
   add_action('wp_enqueue_scripts', 'wt_style');
+
+  if(! function_exists()) {
+
+    function wt_scripts(){
+      wp_enqueue_script('wt-js', get_template_directory_uri().'/js/app.js',array("jquery"),null,true);
+    }
+}
+
+  add_action('wp_enqueue_scripts', 'wt_scripts');
 
 
  ?>

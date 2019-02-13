@@ -22,9 +22,10 @@ header {
        .navMenu {
          text-align: right;
          ul {
-           li {
+           .page_item {
              color: #fff;
              display: inline-block;
+             margin-right: 15px;
              & a {
                color: #fff;
                text-decoration: none;

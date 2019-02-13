@@ -45,21 +45,27 @@ header .container .wrapHeaderContent .header_right .navMenu {
   text-align: right;
 }
 
-header .container .wrapHeaderContent .header_right .navMenu ul li {
+header .container .wrapHeaderContent .header_right .navMenu ul .page_item {
   color: #fff;
   display: inline-block;
+  margin-right: 15px;
 }
 
-header .container .wrapHeaderContent .header_right .navMenu ul li a {
+header .container .wrapHeaderContent .header_right .navMenu ul .page_item a {
   color: #fff;
   text-decoration: none;
 }
 
-header .container .wrapHeaderContent .header_right .navMenu ul li a:hover {
+header .container .wrapHeaderContent .header_right .navMenu ul .page_item a:hover {
   color: red;
 }
 
 .wrapAll {
   height: 1000px;
+}
+
+.wrapAll .container {
+  background-color: yellow;
+  height: 100%;
 }
 
