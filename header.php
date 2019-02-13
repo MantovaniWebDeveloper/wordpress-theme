@@ -9,11 +9,11 @@
   <body <?php body_class(); ?>>
     <header>
       <div class="container">
-        <div class="columns wrapHeaderContent is-desktop">
-          <div class="column is-one-third">
+        <div class="wrapHeaderContent">
+          <div class="header_left">
             <h2><?php bloginfo("name"); ?></h2>
           </div>
-          <div class="column">
+          <div class="header_right">
             <nav class="navMenu">
                 <?php
                   wp_nav_menu(array(

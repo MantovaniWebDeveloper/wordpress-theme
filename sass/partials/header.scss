@@ -5,21 +5,29 @@ header {
  .container {
    height: 100%;
    .wrapHeaderContent {
-     height: 100%;
+     display: flex;
      align-items: center;
-     h2 {
-       color:red;
-       text-transform: uppercase;
-       font-weight: bold;
+     height: 100%;
+     .header_left {
+       width: 30%;
+       h2 {
+         color:red;
+         text-transform: uppercase;
+         font-weight: bold;
+       }
      }
-     .column {
+     .header_right {
+       padding-left: 20px;
+       width: 70%;
        .navMenu {
+         text-align: right;
          ul {
            li {
              color: #fff;
              display: inline-block;
              & a {
                color: #fff;
+               text-decoration: none;
              }
              & a:hover {
                color: red;
