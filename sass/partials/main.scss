@@ -1,7 +1,25 @@
-.wrapAll {
-  height: 100%;
+main {
   .container {
-    background-color: yellow;
-    height: 100%;
+    display: flex;
+    padding-top: 50px;
+    .wrapPost{
+      width: 70%;
+      .post {
+        padding-top: 30px;
+        margin-right: 10px;
+        border-bottom: 1px solid lightgrey;
+        .title-article {
+          font-size: 30px;
+        }
+        .text-article {
+          padding-top: 30px;
+        }
+      }
+
+    }
+    .sidebar {
+      width: 30%;
+      background-color: red;
+    }
   }
 }

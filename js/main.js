@@ -4,8 +4,8 @@ jQuery(document).ready(function(){
       loop:true,
       margin:10,
       autoHeight:true,
-    /*  autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true*/
+      autoplay:true,
+      autoplayTimeout:6000,
+      autoplayHoverPause:true
   });
 });

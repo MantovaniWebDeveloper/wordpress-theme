@@ -60,13 +60,32 @@ header .container .wrapHeaderContent .header_right .navMenu ul .page_item a:hove
   color: red;
 }
 
-.wrapAll {
-  height: 100%;
+main .container {
+  display: flex;
+  padding-top: 50px;
 }
 
-.wrapAll .container {
-  background-color: yellow;
-  height: 100%;
+main .container .wrapPost {
+  width: 70%;
+}
+
+main .container .wrapPost .post {
+  padding-top: 30px;
+  margin-right: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+main .container .wrapPost .post .title-article {
+  font-size: 30px;
+}
+
+main .container .wrapPost .post .text-article {
+  padding-top: 30px;
+}
+
+main .container .sidebar {
+  width: 30%;
+  background-color: red;
 }
 
 .item {

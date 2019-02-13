@@ -98,11 +98,10 @@ jQuery(document).ready(function () {
     items: 1,
     loop: true,
     margin: 10,
-    autoHeight: true
-    /*  autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true*/
-
+    autoHeight: true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true
   });
 });
 

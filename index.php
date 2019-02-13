@@ -22,6 +22,23 @@
         wp_reset_postdata();
         ?>
     </div>
+    <main>
+      <div class="container">
+        <div class="wrapPost">
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <article class="post">
+              <h3 class="title-article"><?php the_title(); ?></h3>
+              <p class="text-article"><?php the_excerpt(); ?></p>
+            </article>
+          <?php endwhile; else: ?>
+          <p>Spiacente, nessun articolo corrisponde ai criteri di ricerca.</p>
+          <?php endif; ?>
+        </div>
+        <div class="sidebar">
+
+        </div>
+      </div>
+    </main>
 
 
 
