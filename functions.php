@@ -10,7 +10,7 @@
       add_theme_support( 'post-thumbnails' );
       //dimensioni per le imagini in articoli e pagine
       add_image_size('wt_big',1400,600,true);
-      add_image_size('wt_quad',600,600,true);
+      add_image_size('wt_quad',800,400,true);
       add_image_size('wt_single',800,500,true);
 
 

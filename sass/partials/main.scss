@@ -8,10 +8,16 @@ main {
         padding-top: 30px;
         margin-right: 10px;
         border-bottom: 1px solid lightgrey;
-        .title-article {
-          font-size: 30px;
-          &:a {
-            color: #fff;
+        a {
+          color:#000;
+          text-decoration: none;
+          .title-article {
+            font-size: 30px;
+            text-transform: uppercase;
+          }
+          :hover {
+            color: red;
+            text-decoration: underline;
           }
         }
         .text-article {

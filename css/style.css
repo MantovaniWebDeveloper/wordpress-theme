@@ -80,12 +80,19 @@ main .container .wrapPost .post {
   border-bottom: 1px solid lightgrey;
 }
 
-main .container .wrapPost .post .title-article {
-  font-size: 30px;
+main .container .wrapPost .post a {
+  color: #000;
+  text-decoration: none;
 }
 
-main .container .wrapPost .post .title-article:a {
-  color: #fff;
+main .container .wrapPost .post a .title-article {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+main .container .wrapPost .post a :hover {
+  color: red;
+  text-decoration: underline;
 }
 
 main .container .wrapPost .post .text-article {
