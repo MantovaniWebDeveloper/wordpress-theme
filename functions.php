@@ -31,6 +31,8 @@
 
     function wt_style(){
       wp_enqueue_style('wt-css', get_template_directory_uri().'/css/style.css');
+      wp_enqueue_style('owl-css', get_template_directory_uri().'/css/owl.carousel.min.css');
+      wp_enqueue_style('owl-css-2', get_template_directory_uri().'/css/owl.theme.default.min.css');
     }
 }
 

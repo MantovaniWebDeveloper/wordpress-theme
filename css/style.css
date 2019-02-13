@@ -69,3 +69,15 @@ header .container .wrapHeaderContent .header_right .navMenu ul .page_item a:hove
   height: 100%;
 }
 
+.item {
+  position: relative;
+}
+
+.item .title-slider {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
