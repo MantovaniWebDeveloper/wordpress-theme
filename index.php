@@ -37,7 +37,7 @@
           <?php endif; ?>
         </div>
         <div class="sidebar">
-
+            <?php dynamic_sidebar('Primary'); ?>
         </div>
       </div>
     </main>
