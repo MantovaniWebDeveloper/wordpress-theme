@@ -26,6 +26,24 @@
   add_action('after_setup_theme', 'wt_setup_theme');
   //***************************************************/
 
+  /**********SIDEBAR***********/
+  if(! function_exists()) {
+    function wt_sidebars() {
+      register_sidebar(array(
+        'name' => esc_html__('Primary','wt'),
+        'id' => 'primaSidebar',
+        'description' => esc_html__('Main sidebar','wt'),
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>'
+      )
+    );
+  }
+}
+add_action( "widgets_init", "wt_sidebars");
+  /*******************************/
+
   /*INCLUSIONE STILI*/
   if(! function_exists()) {
 
