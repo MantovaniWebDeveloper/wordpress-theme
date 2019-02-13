@@ -10,6 +10,11 @@
   margin: 0 auto;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -77,6 +82,10 @@ main .container .wrapPost .post {
 
 main .container .wrapPost .post .title-article {
   font-size: 30px;
+}
+
+main .container .wrapPost .post .title-article:a {
+  color: #fff;
 }
 
 main .container .wrapPost .post .text-article {

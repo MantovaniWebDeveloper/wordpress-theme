@@ -10,6 +10,9 @@ main {
         border-bottom: 1px solid lightgrey;
         .title-article {
           font-size: 30px;
+          &:a {
+            color: #fff;
+          }
         }
         .text-article {
           padding-top: 30px;
