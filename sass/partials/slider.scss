@@ -1,10 +1,18 @@
 .item {
   position: relative;
-  .title-slider {
+  .item-content {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 50px;
+    left: 20px;
     color: #fff;
-    font-size: 30px;
+    .title-slider {
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+    .text-slider {
+      font-size: 20px;
+    }
+
   }
+
 }

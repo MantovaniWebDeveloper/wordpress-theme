@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <div class="wrapAll">
-  <div class="container">
     <div class="owl-carousel owl-theme">
       <?php
       $the_query = new WP_Query( 'cat=3' );
@@ -8,8 +7,12 @@
       while ( $the_query->have_posts() ) :
       	$the_query->the_post(); ?>
         <div class="item">
-          <h2 class="title-slider"><?php the_title(); ?></h2>
+          <div class="item-content">
+            <h2 class="title-slider"><?php the_title(); ?></h2>
+            <p class="text-slider"><?php the_excerpt(); ?></p>
+          </div>
           <?php the_post_thumbnail('wt_big', array('class' =>'')); ?>
+
         </div>
 
 
@@ -20,7 +23,6 @@
         ?>
     </div>
 
-</div>
 
 
 

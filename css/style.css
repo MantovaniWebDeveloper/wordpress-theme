@@ -73,11 +73,19 @@ header .container .wrapHeaderContent .header_right .navMenu ul .page_item a:hove
   position: relative;
 }
 
-.item .title-slider {
+.item .item-content {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 50px;
+  left: 20px;
   color: #fff;
-  font-size: 30px;
+}
+
+.item .item-content .title-slider {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.item .item-content .text-slider {
+  font-size: 20px;
 }
 
