@@ -95,6 +95,10 @@ main .container .wrapPost .post a :hover {
   text-decoration: underline;
 }
 
+main .container .wrapPost .post .date {
+  padding-bottom: 20px;
+}
+
 main .container .wrapPost .post .text-article {
   padding-top: 30px;
 }

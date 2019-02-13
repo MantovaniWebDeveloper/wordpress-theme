@@ -28,6 +28,7 @@
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <article class="post">
               <a href="#"><h3 class="title-article"><?php the_title(); ?></h3></a>
+              <p class="date">Creato il <?php the_time("j M Y"); ?> - <?php the_category(","); ?></p>
               <?php the_post_thumbnail('wt_quad', array('class' =>'img-responsive')); ?>
               <p class="text-article"><?php the_excerpt(); ?></p>
             </article>
