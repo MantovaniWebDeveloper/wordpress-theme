@@ -39,7 +39,9 @@
   if(! function_exists()) {
 
     function wt_scripts(){
-      wp_enqueue_script('wt-js', get_template_directory_uri().'/js/app.js',array("jquery"),null,true);
+      wp_enqueue_script('owl-js', get_template_directory_uri().'/js/owl.carousel.min.js',array("jquery"),true);
+      wp_enqueue_script('wt-js', get_template_directory_uri().'/js/app.js',true);
+
     }
 }
 

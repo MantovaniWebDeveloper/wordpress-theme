@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="wrapAll">
   <div class="container">
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel">
       <?php
       $the_query = new WP_Query( 'cat=3' );
 
