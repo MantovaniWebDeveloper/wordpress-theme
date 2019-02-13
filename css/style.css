@@ -103,11 +103,6 @@ main .container .wrapPost .post .text-article {
   padding-top: 30px;
 }
 
-main .container .sidebar {
-  width: 30%;
-  background-color: red;
-}
-
 .item {
   position: relative;
 }
@@ -126,5 +121,31 @@ main .container .sidebar {
 
 .item .item-content .text-slider {
   font-size: 20px;
+}
+
+.sidebar {
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.sidebar .widget {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.sidebar .widget ul {
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.sidebar .widget ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar .widget ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
